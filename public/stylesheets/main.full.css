@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+}
+body {
+    background: #ffffff no-repeat center center fixed;
+    transition: background 1.5s linear;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+a, a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: none;
+}
+
+.Home {
+    text-align: center;
+    color: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+.HomeHeader {
+    color: rgb(0, 0, 0);
+    font-size: 450%;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0), 3px 3px 2px rgba(255, 255, 255);
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+/*.HomeWork {
+    margin-left: 5px;
+    color: rgb(0, 218, 247, 0.9);
+    display: inline-block;
+}*/
+.HomeOptions {
+    border-width: 1.5px;
+    padding: 20px 25px 20px 25px;
+    display: inline-block;
+
+    /*border-style: solid;
+    border-color: rgba(38, 38, 38, 0.75);
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.75);*/
+}
+.HomeOption {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+
+    border-style: solid;
+    border-color: rgba(41, 41, 41, 0.75);
+    border-width: 1.5px;
+    border-radius: 5px;
+    padding: 20px;
+
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.HomeOption:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.HomeOption:not(:first-child) {
+    margin-left: 10px;
+}
+.HomeOptionIMG {
+    float: bottom;
+    width: 300px;
+    height: 150px;
+}

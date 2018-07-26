@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<head>
+		<title>{{title}}</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="/stylesheets/main.full.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<div class="Home">
+			<div>
+				<a class="HomeHeader" href="/">Orion-Entertainment<!-- .Net<p class="HomeWork">work</p> --></a>
+			</div><br>
+			<div class="HomeOptions">
+				<a href="https://orionlife.enjin.com" class="HomeOption"><img class="HomeOptionIMG" src="/images/options/arma3.png"></img></a>
+				<!-- <a href="/Minecraft" class="HomeOption"><img class="HomeOptionIMG" src="/images/options/mc.png"></img></a> -->
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			window.onload = function () {
+				function preload(arrayOfImages) {
+					$(arrayOfImages).each(function () {
+						$('<img />').attr('src',this).appendTo('body').css('display','none');
+					});
+				}
+
+				const Images = [
+					"/images/backgrounds/water.jpg",
+					"/images/backgrounds/bank.jpg",
+					"/images/backgrounds/leport.jpg",
+					"/images/backgrounds/prison.jpg",
+					"/images/backgrounds/mansion.jpg"
+				];
+
+				preload([Images[0]])
+				$('body').css('background-image', 'url('+Images[0]+')');
+
+				let preloadImages = 0;
+				function ChangeBackground(updateTime) {
+					if (preloadImages === 0) {
+						preload(Images)
+						preloadImages++;
+					}
+					setTimeout(() => {
+
+						$(document).ready(function() {
+							$('body').css('background-image', 'url('+Images[Math.floor(Math.random() * Images.length)]+')');
+						});
+
+						ChangeBackground(updateTime);
+					}, updateTime * 1000);
+				};
+				
+				ChangeBackground(5);
+			};
+		</script>
+	</body>
+</html>
