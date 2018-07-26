@@ -6,7 +6,6 @@ process.env.TZ = 'America/Montreal';
 Port = '3232';
 const port = normalizePort(process.env.PORT || Port);
 app.set('port', port);
-console.log("OrionWebsite: Starting on Port: "+port);
 
 const server = http.createServer(app);
 server.listen(port);

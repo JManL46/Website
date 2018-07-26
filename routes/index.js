@@ -10,6 +10,14 @@ router.get('/', async(req, res, next) => {
     }
 });
 
+router.get('/login', async(req, res, next) => {
+    try {
+        return res.redirect('https://panel.orion-entertainment.net/login?ReturnURL=https://orion-entertainment.net/');
+    } catch (error) {
+        return res.render('error', { error: error });
+    }
+});
+
 
 
 
