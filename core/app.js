@@ -61,7 +61,7 @@ app.use((req, res, next) => {
 });
 
 const index = require('../routes/index'); app.use('/', index);
-//const Minecraft = require('../routes/Minecraft'); app.use('/Minecraft', Minecraft);
+//const Minecraft = require('../routes/Minecraft'); app.use('/Minecraft', Minecraft); 
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
