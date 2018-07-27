@@ -68,7 +68,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-const APIKey = config.APIKey;
+const APIKey = config.API;
 app.use((req, res, next) => {
     req.APIKey = APIKey;
     req.isOnlyLetters = function(text) {

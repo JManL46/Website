@@ -1,5 +1,4 @@
 {
-    "APIKey": "v6uUcRpVqj8YRo-EntVuy9DWDZ-H0nwnCv0PGinvGWPoNiUEP88YVSpjjvgZr8R74Id85KvgnmxQ2qHgAS9ne4yA9hwnxbOTm-EmTtMtVKFanrpXgti-h2qJ8uHG1x9e",
     "Sessions": {
         "host": "127.0.0.1",
         "user": "oe-web",
@@ -10,5 +9,9 @@
 
         "checkExpirationInterval": 60000,
         "expiration": 86400000
+    },
+    "API": {
+        "client_id": 5,
+        "token": "o4daZlzlp1qK9mXoP2pcyxFHUr30lZtm-vWUqOEwH5Wahgjns8bZGXKFTrjp8RthG"
     }
 }
