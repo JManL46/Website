@@ -18,35 +18,6 @@ router.get('/login', async(req, res, next) => {
     }
 });
 
-
-
-
-router.get('/success', async(req, res, next) => {
-    try {
-        console.log(req.query)
-        return res.render('index', { title: 'Orion-Entertainment' });
-    } catch (error) {
-        return res.render('error', { error: error });
-    }
-});
-router.get('/cancel', async(req, res, next) => {
-    try {
-        console.log(req.query)
-        return res.render('index', { title: 'Orion-Entertainment' });
-    } catch (error) {
-        return res.render('error', { error: error });
-    }
-});
-router.get('/test', async(req, res, next) => {
-    try {
-        console.log(req.query)
-        return res.render('index', { title: 'Orion-Entertainment' });
-    } catch (error) {
-        return res.render('error', { error: error });
-    }
-});
-
-
 router.get('/privacy-policy', async(req, res, next) => {
     try {
         return res.render('privacypolicy', { title: 'Orion-Entertainment - Privacy Policy' });
